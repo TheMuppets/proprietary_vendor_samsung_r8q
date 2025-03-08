@@ -6,11 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/r8q
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/r8q/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
-    vendor/samsung/r8q/proprietary/vendor/bin/hw/nxp.android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/nxp.android.hardware.nfc@1.2-service \
-    vendor/samsung/r8q/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
-    vendor/samsung/r8q/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
-    vendor/samsung/r8q/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/samsung/r8q/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Bluetooth_cal.acdb \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Codec_cal.acdb \
@@ -87,15 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r8q/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
     vendor/samsung/r8q/proprietary/vendor/firmware/nfc/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/libsn100u_fw.so \
     vendor/samsung/r8q/proprietary/vendor/firmware/nfc/sec_s3nrn4v_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn4v_firmware.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib64/K32QS_libTsAeFront.so:$(TARGET_COPY_OUT_VENDOR)/lib64/K32QS_libTsAeFront.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/K32QS_libTsAfFront.so:$(TARGET_COPY_OUT_VENDOR)/lib64/K32QS_libTsAfFront.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/K32QS_libTsAwbFront.so:$(TARGET_COPY_OUT_VENDOR)/lib64/K32QS_libTsAwbFront.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/X12QS_libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/X12QS_libTsAe.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/X12QS_libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/X12QS_libTsAf.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/X12QS_libTsAwb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/X12QS_libTsAwb.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/X12QS_libTsPdafm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/X12QS_libTsPdafm.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.samsung.sensor.s5k3l6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.s5k3l6.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_0_sony_imx555.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_0_sony_imx555.bin \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.12_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.12_sony_imx616_full.bin \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin \
@@ -105,118 +92,131 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3l6.bin \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx555.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx555.bin \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.remosaic.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.sbi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.sbi.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.qti.stats.tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.tracker.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.samsung.node.capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.capture_bokeh.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.samsung.node.capture_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.capture_fusion.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.samsung.node.multi_frame_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.multi_frame_video_hdr.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.samsung.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.realtimebokeh.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.samsung.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.smooth_transition.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.uniplugin_capture.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.uniplugin_preview.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_recording.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.uniplugin_recording.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.samsung.node.uniplugin_vdis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.uniplugin_vdis.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.ss.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.ss.stats.aec.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.ss.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.ss.stats.af.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.ss.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.ss.stats.awb.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/com.ss.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.ss.stats.pdlib.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/camera/ois_mcu_stm32g_fw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/ois_mcu_stm32g_fw.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.frameselect.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.fusion.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.generic.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.gs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.hdr.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.memcpy.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.mfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mfsr.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.qcfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.qcfa.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rawhdr.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rt.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.serializer.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.stub.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libIMUSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libIMUSensor.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofencing.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_in_system_lib.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp_sensortest.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libsec_semRil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec_semRil.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_image_optical_zoom.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libvdis_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvdis_interface.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/nfc_nci_nxpsn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxpsn.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/nfc_nci_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_sec.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.1.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.2.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.0.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.1.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@3.0.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.qti.gnss@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/vendor.samsung.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.nfc@2.0.so
+    vendor/samsung/r8q/proprietary/vendor/lib64/camera/ois_mcu_stm32g_fw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/ois_mcu_stm32g_fw.bin
 
 PRODUCT_PACKAGES += \
+    K32QS_libTsAeFront \
+    K32QS_libTsAfFront \
+    K32QS_libTsAwbFront \
+    X12QS_libTsAe \
+    X12QS_libTsAf \
+    X12QS_libTsAwb \
+    X12QS_libTsPdafm \
     android.hardware.secure_element-impl-gto \
+    com.samsung.sensor.s5k3l6 \
+    com.qti.camx.chiiqutils \
+    com.qti.eisv2 \
+    com.qti.eisv3 \
+    com.qti.hvx.addconstant \
+    com.qti.hvx.binning \
+    com.qti.node.depth \
+    com.qti.node.dummyrtb \
+    com.qti.node.dummysat \
+    com.qti.node.eisv2 \
+    com.qti.node.eisv3 \
+    com.qti.node.fcv \
+    com.qti.node.gpu \
+    com.qti.node.memcpy \
+    com.qti.node.remosaic \
+    com.qti.node.sbi \
+    com.qti.node.stich \
+    com.qti.node.swregistration \
+    com.qti.stats.afd \
+    com.qti.stats.asd \
+    com.qti.stats.hafoverride \
+    com.qti.stats.pdlibsony \
+    com.qti.stats.pdlibwrapper \
+    com.qti.stats.tracker \
+    com.samsung.node.capture_bokeh \
+    com.samsung.node.capture_fusion \
+    com.samsung.node.multi_frame_video_hdr \
+    com.samsung.node.realtimebokeh \
+    com.samsung.node.smooth_transition \
+    com.samsung.node.uniplugin_capture \
+    com.samsung.node.uniplugin_preview \
+    com.samsung.node.uniplugin_recording \
+    com.samsung.node.uniplugin_vdis \
+    com.ss.stats.aec \
+    com.ss.stats.af \
+    com.ss.stats.awb \
+    com.ss.stats.pdlib \
+    libdepthmapwrapper \
+    com.qti.feature2.anchorsync \
+    com.qti.feature2.demux \
+    com.qti.feature2.frameselect \
+    com.qti.feature2.fusion \
+    com.qti.feature2.generic \
+    com.qti.feature2.gs \
+    com.qti.feature2.hdr \
+    com.qti.feature2.memcpy \
+    com.qti.feature2.mfsr \
+    com.qti.feature2.qcfa \
+    com.qti.feature2.rawhdr \
+    com.qti.feature2.rt \
+    com.qti.feature2.serializer \
+    com.qti.feature2.stub \
+    com.qti.feature2.swmf \
     ese_spi_nxp \
+    android.hardware.gnss@2.1-impl-qti \
+    com.qti.chi.override \
+    vendor.samsung.hardware.gnss@2.0-impl-sec \
+    libIMUSensor \
+    libbatching \
+    libbauthserver \
+    libbauthtzcommon \
+    libcacertclient \
+    libcdfw \
+    libcdfw_remote_api \
+    libdataitems \
+    libegis_fp_normal_sensor_test \
+    libgarden \
+    libgeofencing \
+    libgf_in_system_lib \
+    libgnss \
+    libgnsspps \
+    libgps.utils \
+    libizat_client_api \
+    libizat_core \
+    libjnihelper \
+    liblbs_core \
+    libloc_api_v02 \
+    libloc_core \
+    libloc_socket \
+    liblocation_api \
+    liblocationservice \
+    liblocationservice_glue \
+    liblowi_client \
+    liblowi_wifihal \
+    libmmosal \
+    libqcc_file_agent \
+    libqdma_file_agent \
+    libqfp_sensortest \
+    libsec_semRil \
+    libsynaFpSensorTestNwd \
+    libsynergy_loc_api \
+    libtriplecam_image_optical_zoom \
+    libtriplecam_optical_zoom_control \
+    libtriplecam_video_optical_zoom \
+    libvdis_interface \
+    nfc_nci_nxpsn \
+    nfc_nci_sec \
+    vendor.qti.gnss@1.0 \
+    vendor.qti.gnss@1.1 \
+    vendor.qti.gnss@1.2 \
+    vendor.qti.gnss@2.0 \
+    vendor.qti.gnss@2.1 \
+    vendor.qti.gnss@3.0 \
+    vendor.qti.gnss@4.0 \
+    vendor.qti.hardware.cacert@1.0 \
+    vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.samsung.hardware.gnss@2.0 \
+    vendor.samsung.hardware.nfc@2.0 \
     CACertService \
     android.hardware.gnss@2.1-service-qti.xml \
+    android.hardware.gnss@2.1-service-qti \
     android.hardware.secure_element@1.0-service \
-    android.hardware.secure_element@1.0-service-gto
+    android.hardware.secure_element@1.0-service-gto \
+    nxp.android.hardware.nfc@1.2-service \
+    loc_launcher \
+    lowi-server \
+    xtra-daemon
