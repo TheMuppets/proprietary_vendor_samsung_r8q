@@ -192,6 +192,7 @@ PRODUCT_PACKAGES += \
     libqdma_file_agent \
     libqfp_sensortest \
     libsec_semRil \
+    libsecril-client \
     libsynaFpSensorTestNwd \
     libsynergy_loc_api \
     libtriplecam_image_optical_zoom \
