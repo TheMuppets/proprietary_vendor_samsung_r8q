@@ -201,6 +201,9 @@ PRODUCT_PACKAGES += \
     libvdis_interface \
     nfc_nci_nxpsn \
     nfc_nci_sec \
+    sensors.flicker \
+    sensors.grip \
+    sensors.ssc \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
     vendor.qti.gnss@1.2 \
