@@ -103,6 +103,9 @@ PRODUCT_PACKAGES += \
     X12QS_libTsAwb \
     X12QS_libTsPdafm \
     android.hardware.secure_element-impl-gto \
+    com.samsung.sensor.hi847 \
+    com.samsung.sensor.imx555 \
+    com.samsung.sensor.imx616 \
     com.samsung.sensor.s5k3l6 \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
