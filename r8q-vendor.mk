@@ -160,7 +160,12 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
     com.qti.chi.override \
     vendor.samsung.hardware.gnss@2.0-impl-sec \
+    libDLInterface.camera.samsung \
     libIMUSensor \
+    libMoonVerifier_v1.camera.samsung \
+    libObjectDetector_v1.camera.samsung \
+    libOpenCv.camera.samsung \
+    libPetDetector_interface \
     libbatching \
     libbauthserver \
     libbauthtzcommon \
