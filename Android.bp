@@ -3483,6 +3483,9 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcrypto",
                 "libsecnativefeature",
+                "libbinder_ndk",
+                "android.hardware.nfc-V1-ndk",
+                "vendor.samsung.hardware.nfc_aidl-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -3909,6 +3912,31 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.nfc_aidl-V1-ndk",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.nfc_aidl-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
 android_app_import {
     name: "CACertService",
     owner: "samsung",
@@ -3950,6 +3978,40 @@ cc_prebuilt_binary {
                 "android.hardware.gnss@2.0",
                 "android.hardware.gnss@2.1",
                 "vendor.samsung.hardware.gnss@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "sec.android.hardware.nfc-service",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/sec.android.hardware.nfc-service",
+            ],
+            shared_libs: [
+                "nfc_nci_sec",
+                "android.hardware.nfc-V1-ndk",
+                "vendor.samsung.hardware.nfc_aidl-V1-ndk",
+                "libbase",
+                "libhardware",
+                "liblog",
+                "libutils",
+                "libcrypto",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",

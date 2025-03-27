@@ -1,0 +1,10 @@
+service nfc_hal_service /vendor/bin/hw/sec.android.hardware.nfc-service
+    interface aidl android.hardware.nfc.INfc/default
+    interface aidl vendor.samsung.hardware.nfc_aidl.ISehNfc/default
+    class hal
+    oneshot
+    disabled
+    user nfc
+    group nfc net_bt_admin
+on property:ro.vendor.nfc.feature.chipname=SLSI
+    start nfc_hal_service
