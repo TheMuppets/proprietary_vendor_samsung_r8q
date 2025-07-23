@@ -20,6 +20,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r8q/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/samsung/r8q/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/samsung/r8q/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
+    vendor/samsung/r8q/proprietary/vendor/etc/init/android.hardware.secure_element@1.0-service-gto-sku.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.0-service-gto-sku.rc \
+    vendor/samsung/r8q/proprietary/vendor/etc/init/android.hardware.secure_element@1.0-service-sku.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.0-service-sku.rc \
+    vendor/samsung/r8q/proprietary/vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nxp.android.hardware.nfc@1.2-service.rc \
     vendor/samsung/r8q/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/samsung/r8q/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/samsung/r8q/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
@@ -99,6 +102,7 @@ PRODUCT_PACKAGES += \
     X12QS_libTsAf \
     X12QS_libTsAwb \
     X12QS_libTsPdafm \
+    android.hardware.secure_element-impl-gto \
     com.samsung.sensor.hi847 \
     com.samsung.sensor.imx555 \
     com.samsung.sensor.imx616 \
@@ -155,6 +159,7 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.serializer \
     com.qti.feature2.stub \
     com.qti.feature2.swmf \
+    ese_spi_nxp \
     android.hardware.gnss@2.1-impl-qti \
     com.qti.chi.override \
     vendor.samsung.hardware.gnss@2.0-impl-sec \
@@ -202,6 +207,7 @@ PRODUCT_PACKAGES += \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
     libvdis_interface \
+    nfc_nci_nxpsn \
     nfc_nci_sec \
     sensors.flicker \
     sensors.grip \
@@ -216,9 +222,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.samsung.hardware.gnss@2.0 \
+    vendor.samsung.hardware.nfc@2.0 \
     CACertService \
     android.hardware.gnss@2.1-service-qti.xml \
     android.hardware.gnss@2.1-service-qti \
+    android.hardware.secure_element@1.0-service \
+    android.hardware.secure_element@1.0-service-gto \
+    nxp.android.hardware.nfc@1.2-service \
     loc_launcher \
     lowi-server \
     xtra-daemon
