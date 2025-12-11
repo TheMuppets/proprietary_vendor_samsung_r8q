@@ -2117,7 +2117,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/ese_spi_nxp.so",
             ],
             shared_libs: [
-                "libbase_shim",
                 "android.hardware.secure_element@1.0",
                 "libcutils",
                 "libhardware",
@@ -3536,7 +3535,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/nfc_nci_nxpsn.so",
             ],
             shared_libs: [
-                "libbase_shim",
                 "android.hardware.nfc@1.0",
                 "android.hardware.nfc@1.1",
                 "android.hardware.nfc@1.2",
