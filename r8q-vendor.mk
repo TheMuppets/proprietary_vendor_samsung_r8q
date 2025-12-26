@@ -204,7 +204,6 @@ PRODUCT_PACKAGES += \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
     libvdis_interface \
-    nfc_nci_sec \
     sensors.flicker \
     sensors.grip \
     sensors.ssc \
